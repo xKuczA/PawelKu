@@ -18,6 +18,7 @@
         </nav>
     </header>
     
+
     <main>
 
         <section id="o-mnie">
@@ -25,31 +26,50 @@
             <p>Studiuje informatykę na Uniwersytecie Śląskim w Katowicach</p>
         </section>
 
+
         <section id="projekty">
             <h2>Projekty</h2>
             <p>Narazie brak</p>
         </section>
 
+
         <section id="kontakt">
             <h2>Kontakt</h2>
-            <p>Email: kucza324@gmail.com</p>
-            <p>Telefon: 997</p>
-            <center><h3>Formularz kontaktowy</h3></center>
-            <form action="przetwarzanie_formularza.php" method="post">
-                <label for="imie">Imię:</label>
-                <input type="text" id="imie" name="imie" required>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <p>Email: kucza324@gmail.com</p>
+                    <p>Telefon: 997</p>
+                </div>
+                
+                <div class="social-icons">
+                    <h3>Znajdź mnie w mediach społecznościowych:</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/xKuczA" target="_blank"><img src="facebook-icon.png" alt="Facebook" height="50px" width="50px"></a></li>
+                        <li><a href="https://www.instagram.com/xminetin/" target="_blank"><img src="instagram-icon.png" alt="Instagram" height="50px" width="50px"></a></li>
+                    </ul>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="contact-form">
+                    <center><h3>Formularz kontaktowy</h3></center>
+                    <form action="przetwarzanie_formularza.php" method="post">
+                        <label for="imie">Imię:</label>
+                        <input type="text" id="imie" name="imie" required>
 
-                <label for="wiadomosc">Wiadomość:</label>
-                <textarea id="wiadomosc" name="wiadomosc" required></textarea>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <input type="submit" value="Wyślij">
-            </form>
+                        <label for="wiadomosc">Wiadomość:</label>
+                        <textarea id="wiadomosc" name="wiadomosc" required></textarea>
+
+                        <input type="submit" value="Wyślij">
+                    </form>
+                </div>
         </section>
 
+
     </main>
+
+
     <footer>
         <p>© Paweł Kuczera</p>
     </footer>
