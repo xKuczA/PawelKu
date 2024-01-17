@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Potęgowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="p.png" type="image/png">
+    <link rel="shortcut icon" href="p.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Potęgowania</h1>
+        <nav>
+            <ul>
+                <li><a href="#opis">Opis</a></li>
+                <li><a href="#kod">Kod</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#powrot">Powrót do Projektów</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="opis">
+        <h2>Opis Projektu</h2>
+        <p>
+            Kalkulator Potęgowania to narzędzie umożliwiające szybkie obliczenia związane z podnoszeniem do potęgi. Wprowadź bazę i wykładnik, a kalkulator zwróci wynik potęgowania, dzięki czemu łatwo możesz uzyskać wartość potęgi dla dowolnych liczb.
+        </p>
+    </section>
+
+    <section id="kod">
+        <h2>Kod Źródłowy</h2>
+        <pre>
+                #include <iostream>
+                #include <cmath>
+                
+                int main() {
+                    // Wprowadź podstawę i wykładnik
+                    double base, exponent;
+                    std::cout << "Podaj podstawe i wykladnik (oddzielone spacja): ";
+                    std::cin >> base >> exponent;
+                
+                    // Oblicz potęgę
+                    double power_result = std::pow(base, exponent);
+                    std::cout << base << " do potegi " << exponent << " to: " << power_result << std::endl;
+                
+                    return 0;
+                }
+        </pre>
+    </section>
+
+    <section id="demo">
+        <h2>Demo</h2>
+        <!-- Tutaj umieść demo lub iframe do działającego kalkulatora -->
+        <p>Przepraszamy, demo jest aktualnie niedostępne.</p>
+    </section>
+
+    <section id="powrot">
+        <h2>Powrót do Projektów</h2>
+        <p>
+            <a href="index.html">Wróć do strony głównej projektów</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© Paweł Kuczera</p>
+    </footer>
+</body>
+</html>

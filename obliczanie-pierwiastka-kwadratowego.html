@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pierwiastka Kwadratowego</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="p.png" type="image/png">
+    <link rel="shortcut icon" href="p.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Pierwiastka Kwadratowego</h1>
+        <nav>
+            <ul>
+                <li><a href="#opis">Opis</a></li>
+                <li><a href="#kod">Kod</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#powrot">Powrót do Projektów</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="opis">
+        <h2>Opis Projektu</h2>
+        <p>
+            Kalkulator Pierwiastka Kwadratowego to prosty narzędzie, które umożliwia obliczenia związane z równaniami kwadratowymi. Dzięki niemu można szybko i łatwo uzyskać wartości pierwiastków oraz delta dla podanych współczynników a, b i c.
+        </p>
+    </section>
+
+    <section id="kod">
+        <h2>Kod Źródłowy</h2>
+        <pre>
+                #include <iostream>
+                #include <cmath>
+                
+                int main() {
+                    // Wprowadź liczbę
+                    double x;
+                    std::cout << "Podaj liczbe: ";
+                    std::cin >> x;
+                
+                    // Oblicz pierwiastek kwadratowy
+                    double sqrt_result = std::sqrt(x);
+                    std::cout << "Pierwiastek kwadratowy z " << x << " to: " << sqrt_result << std::endl;
+                
+                    return 0;
+                }
+        </pre>
+    </section>
+
+    <section id="demo">
+        <h2>Demo</h2>
+        <!-- Tutaj umieść demo lub iframe do działającego kalkulatora -->
+        <p>Przepraszamy, demo jest aktualnie niedostępne.</p>
+    </section>
+
+    <section id="powrot">
+        <h2>Powrót do Projektów</h2>
+        <p>
+            <a href="index.html">Wróć do strony głównej projektów</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© Paweł Kuczera</p>
+    </footer>
+</body>
+</html>

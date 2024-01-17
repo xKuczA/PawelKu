@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Funkcji Kwadratowej</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="p.png" type="image/png">
+    <link rel="shortcut icon" href="p.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Funkcji Kwadratowej</h1>
+        <nav>
+            <ul>
+                <li><a href="#opis">Opis</a></li>
+                <li><a href="#kod">Kod</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#powrot">Powrót do Projektów</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="opis">
+        <h2>Opis Projektu</h2>
+        <p>
+            Kalkulator funkcji kwadratowej umożliwia obliczanie miejsc zerowych i wartości funkcji kwadratowej dla podanych współczynników.
+        </p>
+    </section>
+
+    <section id="kod">
+        <h2>Kod Źródłowy</h2>
+        <pre>
+            #include <iostream>
+            #include <cmath>
+                
+            int main() {
+                // Wprowadź współczynniki a, b i c
+                double a, b, c;
+                std::cout << "Podaj wspolczynniki a, b i c: ";
+                std::cin >> a >> b >> c;
+                
+                // Oblicz deltę
+                double delta = b * b - 4 * a * c;
+                
+               // Sprawdź wartość delty
+                if (delta > 0) {
+                    // Dwa pierwiastki rzeczywiste
+                    double x1 = (-b + std::sqrt(delta)) / (2 * a);
+                    double x2 = (-b - std::sqrt(delta)) / (2 * a);
+                    std::cout << "Pierwiastki to: " << x1 << " i " << x2 << std::endl;
+                } else if (delta == 0) {
+                    // Jeden pierwiastek rzeczywisty (podwójny)
+                    double x = -b / (2 * a);
+                    std::cout << "Pierwiastek to: " << x << std::endl;
+                } else {
+                    // Brak pierwiastków rzeczywistych
+                    std::cout << "Brak pierwiastkow rzeczywistych." << std::endl;
+                }
+                
+                return 0;
+            }
+        </pre>
+    </section>
+
+    <section id="demo">
+        <h2>Demo</h2>
+        <!-- Tutaj umieść demo lub iframe do działającego kalkulatora -->
+        <p>Przepraszamy, demo jest aktualnie niedostępne.</p>
+    </section>
+
+    <section id="powrot">
+        <h2>Powrót do Projektów</h2>
+        <p>
+            <a href="index.html">Wróć do strony głównej projektów</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© Paweł Kuczera</p>
+    </footer>
+</body>
+</html>
